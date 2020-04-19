@@ -14,9 +14,9 @@
   instance:
     hostname: localhost
   client:
-    # 表示是否从 Eureka Server 中获取注册信息，默认true， 单点eureka server 不需要同步其他节点数据，所以配置false
+    表示是否从 Eureka Server 中获取注册信息，默认true， 单点eureka server 不需要同步其他节点数据，所以配置false
     fetch-registry: false
-    # 是否将自己注册到 Eureka Server, 默认true， 单点不需要注册自己
+    是否将自己注册到 Eureka Server, 默认true， 单点不需要注册自己
     register-with-eureka: false
     service-url:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
@@ -43,7 +43,7 @@
       }
   }
   增加yml配置：
-  # 网关服务配置
+  网关服务配置
   zuul:
     prefix: /pikav # 通过网关服务调用前缀
     routes:        #路由
