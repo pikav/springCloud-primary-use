@@ -1,0 +1,22 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: mainpage-zuul
+eureka:
+  client:
+    service-url:
+      defaultZone: http://server1:8000/eureka/
+
+# 网关服务配置
+zuul:
+  prefix: /pikav # 通过网关服务调用前缀
+  routes:        #路由
+    course:
+      path: /mainpage-course/**   # url前缀为此, 则路由到course服务
+      serviceId: eureka-client-mainpage-course    # 服务实例
+      strip-prefix: false        # true: url前缀将被隐藏  false: url前缀显示
+    user:
+      path: /mainpage-user/**   # url前缀为此, 则路由到course服务
+      serviceId: eureka-client-mainpage-user    # 服务实例
+      strip-prefix: false        # true: url前缀将被隐藏  false: url前缀显示

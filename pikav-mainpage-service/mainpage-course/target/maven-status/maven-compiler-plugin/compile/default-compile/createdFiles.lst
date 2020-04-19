@@ -1,0 +1,6 @@
+com\pikav\mainpage\MainpageCourseApplication.class
+com\pikav\mainpage\service\ICourseService.class
+com\pikav\mainpage\controller\MainpageCourseController.class
+com\pikav\mainpage\service\impl\CourseServiceImpl.class
+com\pikav\mainpage\dao\MainpageCourseDao.class
+com\pikav\mainpage\entity\MainpageCourse.class

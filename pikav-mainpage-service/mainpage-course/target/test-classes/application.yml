@@ -1,0 +1,29 @@
+server:
+  port: 7001
+  servlet:
+    context-path: /mainpage-course
+
+spring:
+  application:
+    name: eureka-client-homepage-course
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate.format_sql: true
+    open-in-view: false
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/mainpage?autoReconnect=true&useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: sasasa
+    driver-class-name: com.mysql.jdbc.Driver
+    tomcat:
+      max-active: 4
+      min-idle: 2
+      initial-size: 2
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://server1:8000/eureka/

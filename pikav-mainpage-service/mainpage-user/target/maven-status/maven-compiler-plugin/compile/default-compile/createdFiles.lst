@@ -1,0 +1,12 @@
+com\pikav\mainpage\entity\MainpageUserCours.class
+com\pikav\mainpage\service\impl\UserServiceImpl.class
+com\pikav\mainpage\MainpageUserApplication.class
+com\pikav\mainpage\dao\MainpageUserCourseDao.class
+com\pikav\mainpage\entity\MainpageUser.class
+com\pikav\mainpage\controller\MainpageUserController.class
+com\pikav\mainpage\client\CourseClientHystrix.class
+com\pikav\mainpage\dao\MainpageUserDao.class
+com\pikav\mainpage\vo\UserCourseInfo.class
+com\pikav\mainpage\vo\CreateUserRequest.class
+com\pikav\mainpage\client\CourseClient.class
+com\pikav\mainpage\service\IUserService.class

@@ -1,0 +1,3 @@
+com\pikav\mainpage\filter\AccessLogFilter.class
+com\pikav\mainpage\ZuulGatewayApplication.class
+com\pikav\mainpage\filter\PreRequestFilter.class
